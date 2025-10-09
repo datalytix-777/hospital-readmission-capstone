@@ -1,0 +1,22 @@
+# Ignore system and temp files
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+.env
+*.log
+
+# Ignore all of databases except final_cleaned_data
+/databases/*
+!/databases/final_cleaned_data/
+!/databases/final_cleaned_data/**
+
+# Ignore notebooks autosaves
+*/.ipynb_checkpoints/
+
+# Ignore large temporary data exports
+/data/temp/
+/results/temp/
