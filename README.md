@@ -4,6 +4,12 @@ This project predicts hospital readmission risk using the UCI "Diabetes 130-US H
 
 It uses diagnostic, demographic, and other key comorbidities associated with readmission and evaluates a Random Forest model against a Majority Class and Logistic Regression model.
 
+## Model Performance Context
+
+It’s important to note that the modest ROC-AUC and F1-scores reflect the limitations of the UCI “Diabetes 130-US Hospitals” dataset rather than the modeling process itself. The dataset includes substantial class imbalance, missing values, and limited predictive features, which constrain model performance.
+
+The purpose of this project was to demonstrate the full data science workflow, from cleaning and feature engineering to model evaluation, rather than to achieve a high benchmark score. The models perform slightly above the majority class baseline, which is expected given the dataset’s characteristics, and provide valuable insights into factors contributing to readmission risk.
+
 ## Files
 - **notebook/** - Contains the Jupyter notebook used for EDA and modeling
 - **model/** - Trained Random Forest Model as '.pkl' file
